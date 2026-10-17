@@ -1,0 +1,8 @@
+[First example]
+Cleaned and decoded live EEG for a stress-detecting brain-computer interface as a research assistant at Stanford, where 500 Hz recordings arrive noisy and have to be usable within moments. I rewrote the filtering and artifact-removal steps as vectorized NumPy/SciPy, cutting processing time 42%, and served the decoded state through a FastAPI backend with Redis caching. End-to-end latency fell 34%, so the stress estimate tracks the person instead of lagging behind them.
+
+[Second example]
+Trained an LSTM on financial time series at IPMD and raised accuracy 14.5% by switching to AdamW and retuning, then converted the models to TensorRT with quantization so each prediction dropped from 240 ms to 45 ms (5x). Moving ingestion to PySpark cut data-cleaning time 28%, which meant more experiments per week. The same pattern applies to decoding: better sequence models are only useful if they run fast enough to close the loop.
+
+[Third example]
+Designed a controlled experiment testing whether dendritic optimization helps a PyTorch CNN, holding the baseline fixed and sweeping 7 hyperparameters in Weights & Biases. Accuracy on CIFAR-10 went from 84.59% to 86.85%, and the result was reviewed and merged as an official example in PerforatedAI's open-source repo. I treat model claims the way I'd treat a neural correlate: compare against a baseline, vary one thing, and keep what replicates.

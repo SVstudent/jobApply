@@ -1,0 +1,8 @@
+What I'm going to do: build AI agents that take real actions reliably, the kind that file the permit, open the PR or dispatch the crew, with reasons a human can check. I'd like to do that inside an agent or AI-infra company in Soma's network, like Cognition or Browserbase (whose browser agents I already used to file permits in 311.ai), before building my own.
+
+Why me: I've shipped those pieces end to end, and I get them merged and used, not just demoed.
+- Agents: 311.ai takes a resident's 311 call to an assigned repair crew in under 60 seconds (Best Use of TokenRouter, UC Berkeley AI Hackathon, June 2026). Reflexiv-PR goes from a Sentry crash to a GitHub PR with a tested fix in under 64 seconds. CharlieTourGuy placed 2nd for Best Voice Agent at The AI Champion Ship.
+- Open source: my Dense-Tune example is merged into PerforatedAI's main repo (CIFAR-10 accuracy 84.59% to 86.85%).
+- Real speedups: at IPMD I cut model inference 5x (240 ms to 45 ms) with TensorRT and quantization. At UC Berkeley RadWatch I cut lost sensor data from 8.2% to 0.05% on a pipeline handling 10k+ readings per second.
+
+All of this alongside research at Stanford on a real-time EEG brain-computer interface (backend latency down 34%) and a 4.00 GPA in Math-CS at UCSD.

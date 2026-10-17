@@ -1,0 +1,18 @@
+[Preferred programming language for interviews]
+Python
+
+[Pending offers or deadlines]
+No pending offers or deadlines right now.
+
+[Something you spend a lot of time thinking about]
+How you get from "something broke" to the actual cause without guessing. I've built two tools around that. ElasticSeer is an AI agent that reads system logs through MCP servers and traces an incident back to its root cause, which cut mean time to resolution by 45%. Reflexiv-PR goes a step further: when Sentry reports a crash, it first reproduces the bug in an isolated Docker/Daytona sandbox, and only then writes a fix, reruns the tests and opens a GitHub PR.
+
+What draws me to it is that the reproduce step is the whole game. A fix for a bug you never reproduced is a guess, and a write-up that explains how you reproduced it is what saves the next person an afternoon. That habit carries over to anything, code or not.
+
+[A challenge that stretched you]
+At Stanford I'm building the FastAPI backend for a brain-computer interface that detects stress from EEG in real time. The data comes in at 500 Hz across multiple channels, and the system is only useful if it keeps up. My first versions didn't. I rewrote the signal-cleaning step with vectorized NumPy and SciPy, which made it 42% faster, and added Redis caching for the streams so the backend stopped redoing work. End-to-end latency dropped 34%.
+
+What stretched me was working on something where I don't own the domain. The neuroscientists know what a clean signal looks like; I don't. I learned to ask them what "correct" means before optimizing anything, and to check every speedup against their expectations rather than mine.
+
+[Why Nominal]
+Mission Ops is the closest thing to my RadWatch work, except the sensors are on rocket engines and aircraft instead of radiation detectors. Most of my time there goes to getting messy sensor data flowing reliably into something people can use, which is what writing scripts to connect a customer's data to Nominal sounds like. I'd like to learn the other half: sitting with operators at teams like Hermeus or REGENT, seeing where their test workflow breaks, and turning that into feedback the product team can act on. Plus a hardware lab with a $250 stipend is hard to pass up.

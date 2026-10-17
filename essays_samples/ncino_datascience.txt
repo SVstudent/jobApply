@@ -1,0 +1,7 @@
+nCino - Summer 2027 Data Science Intern - "What attracted you to this role at nCino?"
+
+The closest thing I've done to this role was my data science internship at IPMD. I standardized the PySpark pipelines that ingested financial data feeds, which cut data-cleaning time 28%, and I raised an LSTM forecasting model's accuracy 14.5% by tuning its optimizer. Most of that job was getting messy financial data into shape before any model was worth trusting.
+
+That's what drew me to nCino's Data & AI team. Continuous Credit Monitoring flags at-risk loans and recommends what to do next, and Automated Spreading pulls numbers straight out of financial documents. Both only work if the data underneath is clean and the model's output is something a credit officer will act on. I'd like to learn how your team builds that trust and measures whether a recommendation actually helped.
+
+I can work onsite in Wilmington or Lehi, full-time from June 1, 2027 through the end of August.

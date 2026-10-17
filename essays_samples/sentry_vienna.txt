@@ -1,0 +1,9 @@
+Teach us something!
+
+How a UDP socket loses data while nothing looks broken
+
+UDP has no acknowledgments and no retransmission. When a packet arrives, the kernel copies it into a fixed-size receive buffer for that socket and moves on. If your program doesn't read from that buffer fast enough, packets that arrive while it's full are thrown away. There's no exception and no log line. Your code can be correct and still drop data, because the bug is timing, not logic.
+
+The usual cause is doing slow work between reads: parsing, validating, writing to a database. Every slow step leaves the kernel buffer filling up, and a burst of traffic pushes it over. The fix is to split receiving from processing. One tight loop does nothing except pull packets off the socket and copy them into a ring buffer, which is a fixed array with a write index and a read index that wrap around. Separate async workers drain the ring at their own pace. The receive loop never waits on anything slow, so bursts land in your buffer instead of overflowing the kernel's.
+
+I learned this at UC Berkeley RadWatch, where our radiation sensors send 10k+ readings a second. Moving to ring-buffered UDP sockets took lost data from 8.2% to 0.05%. The general lesson: when a system drops things quietly, look for the queue you didn't know you had. It's the same reason Relay sits in front of Sentry's ingestion and does the cheap, fast work first.
