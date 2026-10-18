@@ -1,1 +1,4 @@
 id,company,title,apply_url,status,date,notes
+M0037,Wynen's,Data Science Intern,https://board.recruitrookie.com/jobs/data-science-intern-conshohocken-01a130be-f255-719e-8c5c-3ace34f16fb054/,BLOCKED-CAPTCHA,2026-10-17,"recruitrookie redirect chain hit Cloudflare challenges twice, never reached a real Wynens posting"
+M0040,IBM,Intern Application Developer 2027 – DPE,https://www.linkedin.com/jobs/view/4451264816/,BLOCKED-TECHNICAL,2026-10-17,"careers.ibm.com form wiped 3x (MFA enrollment reset, session expiry, OIDC bad request); retry in a later session"
+M0041,Ryan,"Summer 2027 Intern, Software Development",https://www.linkedin.com/jobs/view/4479636648/,SKIPPED-transcript,2026-10-17,"Workday account created for vempati.honey@gmail.com; steps 1-3 complete, resume uploaded; step 4 of 6 requires unofficial transcript upload which we do not have"
