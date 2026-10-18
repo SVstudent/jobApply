@@ -118,3 +118,8 @@ Compact table only: company | role | status | one-line note. Essays are in files
 - Quant applications: frame around his math-CS degree (UCSD B.S. Mathematics–Computer Science), 4.00 GPA, SAT 1540, probability/statistics and ML work, C++/Python, low-latency pipeline work (RadWatch UDP ring buffers, TensorRT 5x). Never invent competition results. Respect firm limits (Optiver, Jane Street, HRT, Virtu one-app, Squarepoint one-app, Five Rings transcript, Citadel/SIG portals).
 - PRIORITY (user, 2026-10-17, later): MAIN target is software engineering / AI / ML (ML infra, research eng, DS, quant dev/research, SDET, embedded SWE). Adjacent roles only after those; skip IT-support/helpdesk, mission ops, hardware controls/GNC, non-technical analyst roles.
 - PRIORITY (user, 2026-10-17 night): SWE internships at employers that accept international / F-1 students (CPT/OPT-friendly, H-1B sponsors) come first; note it in batch lines. He has a green card, so "no sponsorship" postings remain eligible, ranked lower.
+
+## Scope widened again (user, 2026-10-18): "DO 100 APPLICATIONS", fully autonomous
+Run target 100. SKIPPED-SCOPE retries now in scope: quant (incl. abroad), data analytics, product, security/AppSec. Still skip IT helpdesk and firmware/hardware-only. Never a transcript. No account creation, passwords or CAPTCHAs.
+
+- Unknown personal facts (driver license, tobacco use, middle name, etc.) are NOT in this brief: pick "prefer not to say"/neutral if offered; if forced, log NEEDS-USER rather than guess. (2026-10-18)
