@@ -131,3 +131,9 @@ Run target 100. SKIPPED-SCOPE retries now in scope: quant (incl. abroad), data a
 - If a site says "you have already applied" or shows an existing application → ALREADY-APPLIED, never resubmit.
 - Exact-same posting is never re-applied (claim.py); sibling postings (other location/team/job ID) are fine only if the company has no limit.
 - Excluded companies stay excluded (Scale AI, Ramp, Flint, KP Fellows, Netic, Revel) even if newly posted.
+
+## PERSONAL FACTS (user, 2026-10-21)
+- Pronouns (only when a form REQUIRES pronouns with no decline option): He/Him. Otherwise prefer "prefer not to say".
+- Driver's license: YES, valid driver's license. Own car / "reliable transportation" / "able to provide your own transportation": NO (no car). Answer truthfully.
+- Criminal history / convictions: NO convictions. Tobacco: non-smoker.
+- Nationality / country of citizenship: India (Indian citizen). Residency: U.S. permanent resident (green card), resident of California.
