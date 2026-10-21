@@ -123,3 +123,11 @@ Compact table only: company | role | status | one-line note. Essays are in files
 Run target 100. SKIPPED-SCOPE retries now in scope: quant (incl. abroad), data analytics, product, security/AppSec. Still skip IT helpdesk and firmware/hardware-only. Never a transcript. No account creation, passwords or CAPTCHAs.
 
 - Unknown personal facts (driver license, tobacco use, middle name, etc.) are NOT in this brief: pick "prefer not to say"/neutral if offered; if forced, log NEEDS-USER rather than guess. (2026-10-18)
+
+## COMPANY APPLICATION LIMITS (user, 2026-10-19: always respect company/org policies)
+- Before applying, count his existing rows for that company: `grep -i ',"<Company>",' ~/Desktop/Resume/APPLIED.csv | grep -cE 'SUBMITTED|UNCONFIRMED'`. Compare with the limit below or with any limit stated on the posting/career site/FAQ ("you may apply to up to N roles", "one application per cycle", "we'll consider your top choices"). At or over the limit → SKIPPED-LIMIT.
+- Known limits: Amplify 3 per 30 days; Optiver one active application at a time; HRT one at a time; Jane Street apply to one internship per season; Virtu one application; Squarepoint one application; Coinbase 3 per 6 months; Google up to 3 per 30 days (portal); Waymo top-3 choices; Citadel/Citadel Securities one internship program per season; IMC, SIG, Five Rings, Jump: one intern application per season unless the posting says otherwise.
+- Programs, fellowships and scholarships: one application per program per cycle.
+- If a site says "you have already applied" or shows an existing application → ALREADY-APPLIED, never resubmit.
+- Exact-same posting is never re-applied (claim.py); sibling postings (other location/team/job ID) are fine only if the company has no limit.
+- Excluded companies stay excluded (Scale AI, Ramp, Flint, KP Fellows, Netic, Revel) even if newly posted.
